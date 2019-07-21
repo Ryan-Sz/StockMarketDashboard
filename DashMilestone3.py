@@ -45,7 +45,7 @@ days = 20
 app = dash.Dash()
 auth = dash_auth.BasicAuth(app, USERNAME_PASSWORD_PAIRS)
 
-nsdq = pd.read_csv("C:\\Users\\szarpagar\\Documents\\Python Scripts\\DashCourse\\Plotly-Dashboards-with-Dash-master\\Data\\NASDAQcompanylist.csv")
+nsdq = pd.read_csv("NASDAQcompanylist.csv")
 nsdq.set_index('Symbol', inplace=True)
 options = []
 
